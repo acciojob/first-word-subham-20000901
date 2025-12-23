@@ -1,6 +1,10 @@
 function firstWord(s) {
   // your code here
 	let str ="";
+	while(s[0] === " "){
+		s = s.slice(1);
+	}
+	
 	for(let i=0; i<s.length; i++) {
 		if(s[i]!== " "){
 			str += s[i];
@@ -9,6 +13,6 @@ function firstWord(s) {
 	return str;
 }
 
-// Do not change the code below
+// // Do not change the code below
 const s = prompt("Enter String:");
 alert(firstWord(s));
